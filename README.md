@@ -9,6 +9,16 @@ Ruby project to support a blog, to study the language.
 rails new blog  -j esbuild --css bootstrap -d postgresql
 ```
 
+* Install popperjs
+```
+npm install @popperjs/core --save
+```
+
+* Precompile
+```
+rails assets:precompile
+```
+
 * Create database
 ```
 rails db:create
