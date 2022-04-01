@@ -19,3 +19,9 @@ rails g model comment post:references author:string body:text
 ```
 rails db:migrate
 ```
+
+* Enters in Rails console and creates the first post manually
+```
+rails c
+Post.create title: 'First post', body: 'First!', author: 'Eduardo Teixeira'
+```
