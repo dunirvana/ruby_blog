@@ -4,6 +4,16 @@ Ruby project to support a blog, to study the language.
 
 ## Commands used during the code:
 
+* Create project
+```
+rails new blog  -j esbuild --css bootstrap -d postgresql
+```
+
+* Create database
+```
+rails db:create
+```
+
 * Create with scaffold controller/view/model/migration (model called "post" with properties "title", "author" e "body")
 ```
 rails g scaffold post title:string author:string body:text
