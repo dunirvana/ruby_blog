@@ -1,24 +1,21 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby project to support a blog, to study the language.
 
-Things you may want to cover:
+## Commands used during the code:
 
-* Ruby version
+* Create with scaffold controller/view/model/migration (model called "post" with properties "title", "author" e "body")
+```
+rails g scaffold post title:string author:string body:text
+```
 
-* System dependencies
+* Create a model for blog comments (called "comment", references "post" and has the properties "author" e "body")
+* This model will have a reference in class Ruby, but the post class not, so enter in class "post.rb" and include "has_many: comments"
+```
+rails g model comment post:references author:string body:text
+```
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Create tables
+```
+rails db:migrate
+```
