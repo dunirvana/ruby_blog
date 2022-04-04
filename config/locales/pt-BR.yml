@@ -30,4 +30,16 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 pt-BR:
-  ola: "Olá mundo"
+  activerecord:
+    models:
+      post: 'Post'
+      comment: 'Comentário'
+
+    attributes:
+      post:
+        title: 'Título'
+        author: 'Autor'
+        body: 'Post'
+      comment:
+        author: 'Autor'
+        body: 'Post'
