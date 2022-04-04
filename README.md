@@ -14,6 +14,23 @@ rails new blog  -j esbuild --css bootstrap -d postgresql
 npm install @popperjs/core --save
 ```
 
+* Add gems
+```
+gem "rails-i18n"
+gem "pry"
+gem 'friendly_id'
+gem 'pg_search'
+```
+
+* Generate friendly_id
+```
+rails generate friendly_id
+rm db/migrate/20220404170112_create_friendly_id_slugs.rb
+rails g migration add_slug_column_to_posts slug 
+# add "unique: true" do the new migration file
+rails db:migrate
+```
+
 * Precompile
 ```
 rails assets:precompile

@@ -78,3 +78,5 @@ end
 # Custom
 gem "rails-i18n"
 gem "pry"
+gem 'friendly_id'
+gem 'pg_search'
