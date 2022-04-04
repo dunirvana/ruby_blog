@@ -77,3 +77,4 @@ end
 
 # Custom
 gem "rails-i18n"
+gem "pry"
