@@ -9,5 +9,6 @@ class Post < ApplicationRecord
   friendly_id :title, use: :slugged
 
   pg_search_scope :search, 
-    against: %i[title author body]
+    against: %i[title author body],
+    associated_against: { comments: %i[body] }
 end
